@@ -11,6 +11,10 @@ class FetchData: ObservableObject {
    
     @Published var conversionData : [Currency] = []
     
+    init() {
+        fetch()
+    }
+    
     func fetch() {
         let url = "https://api.exchangeratesapi.io/latest?base=USD"
         
