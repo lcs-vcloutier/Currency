@@ -14,6 +14,7 @@
 		2AFE700325506A6900ACC1DD /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFE700225506A6900ACC1DD /* Home.swift */; };
 		2AFE700725506B1A00ACC1DD /* Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFE700625506B1A00ACC1DD /* Conversion.swift */; };
 		2AFE700A25506B7700ACC1DD /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFE700925506B7700ACC1DD /* Currency.swift */; };
+		2AFE700D25506C0E00ACC1DD /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFE700C25506C0E00ACC1DD /* FetchData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2AFE700225506A6900ACC1DD /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		2AFE700625506B1A00ACC1DD /* Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversion.swift; sourceTree = "<group>"; };
 		2AFE700925506B7700ACC1DD /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		2AFE700C25506C0E00ACC1DD /* FetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		2AFE700125506A4900ACC1DD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				2AFE700C25506C0E00ACC1DD /* FetchData.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				2AFE700A25506B7700ACC1DD /* Currency.swift in Sources */,
 				2AFE700725506B1A00ACC1DD /* Conversion.swift in Sources */,
 				2AFE700325506A6900ACC1DD /* Home.swift in Sources */,
+				2AFE700D25506C0E00ACC1DD /* FetchData.swift in Sources */,
 				2AFE6FF0255069E600ACC1DD /* CurrencyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
