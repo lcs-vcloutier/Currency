@@ -20,11 +20,14 @@ class FetchData: ObservableObject {
             guard let JSONData = data else{return}
             do{
                 
+                let conversion = try JSONDecoder().decode(Conversion.self, from: JSONData)
+                print(conversion)
             }
             catch{
-                print(error)
+                print(error.localizedDescription)
             }
         }
+        .resume()
     }
 }
 
