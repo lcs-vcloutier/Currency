@@ -23,7 +23,16 @@ struct Home: View {
                         ForEach(viewModel.conversionData) {rate in
                             
                             HStack(spacing: 15){
-                                Text(rate.currencyName)
+                                
+                                Text(getFlag(currency: rate.currencyName))
+                                    .font(.system(size: 65))
+                                VStack(alignment: .leading, spacing: 5, content: {
+                                    Text(rate.currencyName)
+                                        .font(.title)
+                                        .fontWeight(.bold)
+                                    Text("\(rate.currencyValue)")
+                                        .fontWeight(.heavy)
+                                })
                             }
                             .padding(.horizontal)
                         }
@@ -39,7 +48,7 @@ struct Home: View {
         var scalar = String.UnicodeScalarView()
         for i in currency.utf16 {
              
-            scalar.append(UnicodeScalar(base + Int(i)!))
+            scalar.append(UnicodeScalar(base + Int(i))!)
         }
         return String(scalar)
     }
