@@ -25,7 +25,14 @@ class FetchData: ObservableObject {
             do{
                 
                 let conversion = try JSONDecoder().decode(Conversion.self, from: JSONData)
-                print(conversion)
+                
+                // Converting dictionary to array of objects
+                DispatchQueue.main.async {
+                    // Key = name, Value = currency value
+                    self.conversionData = conversion.rates.compactMap({ (key,value) -> Currency? in
+                        return Currency(currencyName: key, currencyValue: value)
+                    })
+                }
             }
             catch{
                 print(error.localizedDescription)

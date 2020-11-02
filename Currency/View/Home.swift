@@ -11,7 +11,15 @@ struct Home: View {
     @StateObject var viewModel = FetchData()
     var body: some View {
         ScrollView {
+            
             // Fetched Data
+            LazyVStack(alignment: .leading, spacing: 15, content: {
+                
+                ForEach(viewModel.conversionData) {rate in
+                    
+                    Text(rate.currencyName)
+                }
+            })
         }
     }
 }
