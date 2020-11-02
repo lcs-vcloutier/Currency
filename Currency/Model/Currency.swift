@@ -16,3 +16,4 @@ struct Currency: Identifiable {
     var currencyValue: Double
 }
 
+var currencies = ["USD", "CAD", "AUD", "EUR", "JPY"]

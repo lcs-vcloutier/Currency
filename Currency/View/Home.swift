@@ -41,7 +41,22 @@ struct Home: View {
                 }
             }
         }
+        .toolbar(content: {
+            Menu(content: {
+                
+                ForEach(currencies, id:\.self){name in
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Text(name)
+                    })
+                }
+                
+            }) {
+                Text("Base \(viewModel.base)")
+                    .fontWeight(.heavy)
+            }
+        })
     }
+    
     // Getting currency flag by currency name
     func getFlag(currency: String) -> String{
         let base = 127397
