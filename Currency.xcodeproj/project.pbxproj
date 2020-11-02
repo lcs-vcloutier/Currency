@@ -12,6 +12,8 @@
 		2AFE6FF4255069EE00ACC1DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AFE6FF3255069EE00ACC1DD /* Assets.xcassets */; };
 		2AFE6FF7255069EE00ACC1DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AFE6FF6255069EE00ACC1DD /* Preview Assets.xcassets */; };
 		2AFE700325506A6900ACC1DD /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFE700225506A6900ACC1DD /* Home.swift */; };
+		2AFE700725506B1A00ACC1DD /* Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFE700625506B1A00ACC1DD /* Conversion.swift */; };
+		2AFE700A25506B7700ACC1DD /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFE700925506B7700ACC1DD /* Currency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2AFE6FF6255069EE00ACC1DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2AFE6FF8255069EE00ACC1DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AFE700225506A6900ACC1DD /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		2AFE700625506B1A00ACC1DD /* Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversion.swift; sourceTree = "<group>"; };
+		2AFE700925506B7700ACC1DD /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 		2AFE700025506A4500ACC1DD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2AFE700625506B1A00ACC1DD /* Conversion.swift */,
+				2AFE700925506B7700ACC1DD /* Currency.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,6 +172,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AFE6FF2255069E600ACC1DD /* ContentView.swift in Sources */,
+				2AFE700A25506B7700ACC1DD /* Currency.swift in Sources */,
+				2AFE700725506B1A00ACC1DD /* Conversion.swift in Sources */,
 				2AFE700325506A6900ACC1DD /* Home.swift in Sources */,
 				2AFE6FF0255069E600ACC1DD /* CurrencyApp.swift in Sources */,
 			);
