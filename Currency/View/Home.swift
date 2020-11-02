@@ -10,16 +10,37 @@ import SwiftUI
 struct Home: View {
     @StateObject var viewModel = FetchData()
     var body: some View {
-        ScrollView {
-            
-            // Fetched Data
-            LazyVStack(alignment: .leading, spacing: 15, content: {
-                
-                ForEach(viewModel.conversionData) {rate in
+        VStack{
+            if viewModel.conversionData.isEmpty{
+                ProgressView()
+            }
+            else {
+                ScrollView {
                     
-                    Text(rate.currencyName)
+                    // Fetched Data
+                    LazyVStack(alignment: .leading, spacing: 15, content: {
+                        
+                        ForEach(viewModel.conversionData) {rate in
+                            
+                            HStack(spacing: 15){
+                                Text(rate.currencyName)
+                            }
+                            .padding(.horizontal)
+                        }
+                    })
+                    .padding(.top)
                 }
-            })
+            }
         }
+    }
+    // Getting currency flag by currency name
+    func getFlag(currency: String) -> String{
+        var base = 127397
+        var scalar = String.UnicodeScalarView()
+        for i in currency.utf16 {
+             
+            scalar.append(UnicodeScalar(base + Int(i)!))
+        }
+        return String(scalar)
     }
 }
