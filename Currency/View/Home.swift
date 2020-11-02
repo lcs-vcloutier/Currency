@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Home: View {
+    @StateObject var viewModel = FetchData()
     var body: some View {
         ScrollView {
             // Fetched Data
